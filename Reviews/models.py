@@ -27,4 +27,3 @@ class ReviewsModel(models.Model):
         verbose_name = 'Отзывы'
         verbose_name_plural = 'Отзывы'
 
-p=11
