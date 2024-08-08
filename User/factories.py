@@ -1,6 +1,6 @@
 import factory
 from factory.django import DjangoModelFactory
-from .models import UsersModel
+from Comments.models import UsersModel
 
 
 class UserFactory(DjangoModelFactory):

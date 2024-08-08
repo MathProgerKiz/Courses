@@ -1,7 +1,7 @@
 from django_filters.rest_framework import DjangoFilterBackend
 
 from rest_framework.exceptions import PermissionDenied
-from rest_framework.mixins import CreateModelMixin, DestroyModelMixin, ListModelMixin
+from rest_framework.mixins import CreateModelMixin, DestroyModelMixin, ListModelMixin, RetrieveModelMixin
 from rest_framework.viewsets import GenericViewSet
 
 from .models import CommentsModel
@@ -12,6 +12,7 @@ from .serializers import CommentSerializer
 class CommentViewSet(CreateModelMixin,
                      DestroyModelMixin,
                      ListModelMixin,
+                     RetrieveModelMixin,
                      GenericViewSet):
 
     serializer_class = CommentSerializer
